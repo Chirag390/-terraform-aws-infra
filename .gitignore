@@ -1,0 +1,33 @@
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Terraform lock file
+.terraform.lock.hcl
+
+# Sensitive variable files
+terraform.tfvars
+*.auto.tfvars
+
+# Backend override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# kubeconfig
+kubeconfig
+.kube/
+
+# OS/Editor junk
+.DS_Store
+.idea/
+.vscode/
+
