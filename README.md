@@ -1,13 +1,13 @@
-# 🚀 Terraform AWS Infrastructure Project
+#Terraform AWS Infrastructure Project
 
 This project provisions a **production-ready AWS infrastructure** using **Terraform** with modular design and workspace separation for Dev, Staging, and Prod environments.
 
-## 🛠️ Features
+Features
 - **Infrastructure-as-Code (IaC)** using Terraform
 - **Remote Backend**: S3 (with versioning) + DynamoDB for state locking
 - **Networking**: VPC with public/private subnets, NAT gateways, Internet Gateway
 - **Compute**: EKS cluster with managed node groups (Kubernetes workloads)
-- **Database**: RDS (Postgres) with Multi-AZ
+- **Database**: RDS (Postgres) with Multi-AZ(optional)
 - **Storage**: S3 buckets with encryption, versioning, and public access block
 - **Load Balancing**: Application Load Balancer (ALB)
 - **Security**: IAM roles/policies, Security Groups, KMS encryption
@@ -16,7 +16,7 @@ This project provisions a **production-ready AWS infrastructure** using **Terraf
 
 
 
-## 🚀 Getting Started
+
 
 ### 1️⃣ Prerequisites
 - [Terraform v1.13+](https://developer.hashicorp.com/terraform/downloads)
@@ -28,7 +28,7 @@ This project provisions a **production-ready AWS infrastructure** using **Terraf
 terraform init
 
 --Select Workspace
-terraform workspace new dev     # only once
+terraform workspace new dev     
 terraform workspace select dev
 
 --Plan and Apply
